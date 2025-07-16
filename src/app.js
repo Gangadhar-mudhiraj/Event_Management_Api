@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 app.use(morgan('dev'));
 
-import eventRoutes from "./routes/book.route"
+import eventRoutes from "./routes/event.route.js"
 app.use("/api/events",eventRoutes)
 // Routes (example)
 app.get('/verify', (req, res) => {
